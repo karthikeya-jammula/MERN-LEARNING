@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ref Page - Semantic & Non-Semantic Tags</title>
+</head>
+<body>
+  <!-- =========================
+       SEMANTIC STRUCTURE
+       ========================= -->
+  <header>
+    <h1>My Website - Header</h1>
+    <p>hello world ... !</p>
+  </header>
+
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="#college">College</a></li>
+      <li><a href="#article">Article</a></li>
+      <li><a href="#list">Tech List</a></li>
+      <li><a href="#form">Form</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="college" aria-labelledby="college-heading">
+      <h2 id="college-heading">OUR COLLEGE IMAGE</h2>
+      <img src="images.jpg" alt="College campus" width="400" />
+
+      <article id="article" aria-labelledby="article-heading">
+        <h3 id="article-heading">Article</h3>
+        <p>
+          <mark>This is Article</mark>
+        </p>
+      </article>
+    </section>
+
+    <section id="list" aria-labelledby="list-heading">
+      <h3 id="list-heading">Technologies (Nested Lists)</h3>
+      <!-- Non-semantic list tags: <ol> used without a nested <ul> is still common; structure kept clear -->
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ol>
+
+      <!-- Non-semantic example: grouped ordering inside <ul> -->
+      <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+      </ul>
+    </section>
+
+    <section id="form" aria-labelledby="form-heading">
+      <h3 id="form-heading">Contact Form (Example)</h3>
+
+      <form>
+        <label for="age">Age:</label>
+        <input id="age" name="age" type="number" placeholder="Enter age" />
+
+        <label for="tech">Tech:</label>
+        <select id="tech" name="tech">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">JS</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- =========================
+         NON-SEMANTIC TAGS (examples)
+         ========================= -->
+    <section aria-labelledby="examples-heading">
+      <h3 id="examples-heading">Non-semantic Tag Examples</h3>
+
+      <div>
+        <p>
+          <u>underline</u>
+          <br />
+          <b>bold</b>
+          <br />
+          <i>italic</i>
+          <br />
+          <small>small text</small>
+        </p>
+      </div>
+
+      <span>
+        This is a <mark>span</mark> (inline) example.
+      </span>
+
+      <table border="1" style="border-collapse: collapse; width: 60%; margin-top: 12px;">
+        <caption>Simple Table (non-semantic layout example)</caption>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ABC</td>
+            <td>Developer</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>All copyrights are reserved.</p>
+  </footer>
+</body>
+</html>
+
