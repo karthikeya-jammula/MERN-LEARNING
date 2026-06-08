@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My web page</title>
+        <style>
+            h1,h2,p{
+                color: aquamarine;
+            }
+            h1{
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            p{
+                color: rgb(195, 99, 224);
+                font-size: 20px;
+            }
+            #ids{
+                color: rgb(66, 13, 165);
+                font-size: 20px;
+            }
+            .large-text{
+                text-transform: uppercase;
+            }
+
+            .textprompt{
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                word-spacing: 10px;
+                line-height: 2;
+                text-decoration: underline;
+            }
+            .solid-border{
+                border: 2px solid rebeccapurple;
+                padding: 20px;
+                margin-bottom: 10px;
+            }
+             .dassed-border{
+                border: 2px dashed rebeccapurple;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            .rounde-border{
+                border: 1px solid red;
+                padding: 10px;
+                margin-bottom: 10px;
+                margin-top: 25px;
+            }
+            input:focus{
+                border: 3px solid yellow;
+                outline: none;
+            }
+            .box{
+                width: 120px;
+                height: 120px;
+                background-color: mediumseagreen;
+                margin: 40px;
+                text-align: center;
+                line-height: 120px;
+            }
+            .scale:hover{
+                transform: scale(1.3);
+            }
+            .rotate:hover{
+                transform: rotate(50deg);
+            }
+            .translate:hover{
+                transform: translateX(60px);
+            }
+            @media(max-width:768px) {
+                .hero{
+                    
+                }
+            }
+            .container{
+                display:grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 10px;
+            }
+            .boxx{
+                border: 1px solid;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container boxx">
+        <div class="box scale">ONE</div>
+        <div class="box rotate">Two</div>
+        <div class="box translate">Three</div>
+        </div>
+        <div class="rounde-border">This is rounded bordered solid red</div>
+        <div class="solid-border">This box has a solid blue</div>\
+        <div class="dassed-border">This boax has a dashed border</div>
+        <h1><b>ROYAL CHALLENGERS BANGALORE</b></h1>
+        <p><mark>This is the paragaraph using selectors</mark> </p>
+        <h2 id="ids">RCB has one Back to Back IPL CUPS in 2025 and 2026</h2>
+        <p class="large-text">Virat kohli who stayed at the end of the crease till the chase is completed. </p>
+
+
+
+
+
+    </body>
+</html>

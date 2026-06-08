@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>profile</title>
+        <style>
+            body{
+                margin:0px;
+                font-family: 'Courier New', Courier, monospace;
+                background-color: rgb(177, 218, 253);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+            .card{
+                background-color: antiquewhite;
+                width: 300px;
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 0 10px 25px black;
+                text-align: center;
+            }
+            .cover{
+                height: 120px;
+                background: linear-gradient(135deg, rgb(16, 16, 128),rgb(4, 4, 122));
+            }
+            .photo{
+                width: 120px;
+                height: 120px;
+                background: rgb(215, 193, 193);
+                border: 5px solid white;
+                border-radius: 50%;
+                margin: -55px auto 15px;
+                align-items: center;
+                justify-content: center;
+                font-size: 38px;
+                display: flex;
+                text-decoration: solid;
+            }
+            .card h2{
+                margin-bottom: 5px;
+            }
+            .card p{
+                color: #1f3d65;
+                margin-bottom: 20px;
+            }
+            .stats{
+                display: flex;
+                justify-content: space-around;
+                border-top: 1px solid whitesmoke;
+                padding: 20px;
+            }
+            .stats strong{
+                display: block;
+                color: rgb(15, 15, 228);
+            }
+            button{
+                padding: 12px 30px;
+                margin-bottom: 25px;
+                border: none;
+                color: rgb(235, 232, 232);
+                border-radius: 8px;
+                background: rgb(123, 52, 145);
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="cover"></div>
+            <div class="photo">Photo</div>
+            <h2>Karthik</h2>
+            <p>Full Stack Developer</p>
+            <div class="stats">
+                <div><strong>120</strong> projects</div>
+                <div><strong>85</strong> students</div>
+                <div><strong>10</strong>years</div>
+            </div>
+             <button >view profile</button>
+        </div>
+
+    </body>
+</html>
